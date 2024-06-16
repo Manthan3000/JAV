@@ -65,6 +65,8 @@ import java.util.*;
 //     }
 // }
 
+// // Q print transpose of the Matrex : 3
+
 public class arrays2D {
 
     @SuppressWarnings("resource")
@@ -85,11 +87,12 @@ public class arrays2D {
 
             }
         }
-
+        System.out.println("Transpose of the matrex is : ");
         for (int j = 0; j < columns; j++) {
             for (int i = 0; i < rows; i++) {
                 System.out.print(Numbers[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
