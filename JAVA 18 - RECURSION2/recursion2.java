@@ -1,4 +1,4 @@
-//           TOWER OF HANOI
+//        //   TOWER OF HANOI
 
 // public class recursion2 {
 
@@ -68,11 +68,84 @@
 //     }
 // }
 
-//  //      Print All Subsequences Of String
+// //  //      Print All Subsequences Of String
+
+// public class recursion2 {
+
+//     public static void Subsequences(String str, int idx, String newString) {
+//         if (idx == str.length()) {
+//             System.out.println(newString);
+//             return;
+//         }
+
+//         char currChar = str.charAt(idx);
+//         // to be
+//         Subsequences(str, idx + 1, newString + currChar);
+//         // not to bee
+//         Subsequences(str, idx + 1, newString);
+
+//     }
+
+//     public static void main(String[] args) {
+//         String str = "ABC";
+//         Subsequences(str, 0, " "); // OUT== ABC,AB,BC,A,B,AC,C." "
+//     }
+// }
+
+//  //      Print Unique Subsequences Of String
+
+// import java.util.HashSet;
+
+// public class recursion2 {
+
+//     public static void Subsequences(String str, int idx, String newString, HashSet<String> set) {
+//         if (idx == str.length()) {
+//             if (set.contains(newString)) {
+//                 return;
+//             } else {
+//                 System.out.println(newString);
+//                 set.add(newString);
+//                 return;
+//             }
+//         }
+
+//         char currChar = str.charAt(idx);
+//         // to be
+//         Subsequences(str, idx + 1, newString + currChar, set);
+//         // not to bee
+//         Subsequences(str, idx + 1, newString, set);
+
+//     }
+
+//     public static void main(String[] args) {
+//         String str = "AAA"; // AAA , AA , A
+//         HashSet<String> set = new HashSet<>();
+//         Subsequences(str, 0, "", set);
+//     }
+// }
+
+// Print Keypad Combination
 
 public class recursion2 {
 
+    public static String[] keyPad = { ".", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TU", "VWX", "YZ" };
+
+    public static void printComb(String str, int idx, String combination) {
+
+        if (idx == str.length()) {
+            System.out.println(combination);
+            return;
+        }
+        char currChar = str.charAt(idx);
+        String mapping = keyPad[currChar - '0'];
+
+        for (int i = 0; i < mapping.length(); i++) {
+            printComb(str, idx + 1, combination + mapping.charAt(i));
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println("nabvgd");
+        String str = "25"; // DM , DN ,DO ,EM ,EN ,EO ,FM ,FN ,FO
+        printComb(str, 0, " ");
     }
 }
