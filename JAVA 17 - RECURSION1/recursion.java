@@ -67,6 +67,7 @@ public class recursion {
         int fact_nm1 = calcFact(n - 1);
         int fact_n = n * fact_nm1;
         return fact_n;
+
     }
 
     public static void main(String[] args) {
