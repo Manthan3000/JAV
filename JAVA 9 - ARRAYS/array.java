@@ -22,8 +22,8 @@ import java.util.*;
 // }
 // }
 
-//input by user and add in array And Search index
-// LINEAR SEARCH ( D.S.A)
+//      input by user and add in array And Search index
+//       LINEAR SEARCH ( D.S.A)
 
 public class array {
 

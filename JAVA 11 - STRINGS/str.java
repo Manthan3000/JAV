@@ -2,16 +2,15 @@ import java.util.*;
 
 //      STRINGS ARE IMMUTEABLE
 
-// public class str {
-
-// public static void main(String[] args) {
-// String name = "Manthan";
-// String fullName = "Manthan Ovhal";
-// Scanner sc = new Scanner(System.in);
-// String NAME = sc.nextLine();
-// System.out.println("Your name is " + NAME);
-// }
-// }
+public class str {
+    public static void main(String[] args) {
+        String name = "Manthan";
+        String fullName = "Manthan Ovhal";
+        Scanner sc = new Scanner(System.in);
+        String NAME = sc.nextLine();
+        System.out.println("Your name is " + NAME);
+    }
+}
 
 // // FUNCTIONS IN STRING
 
@@ -35,7 +34,7 @@ import java.util.*;
 
 // public static void main(String[] args) {
 // String name = "MANTHAN";
-// System.out.println(name.length()); //LENGTH 7
+// System.out.println(name.length()); // LENGTH 7
 // }
 // }
 
@@ -84,11 +83,11 @@ import java.util.*;
 
 // // 5 Substrings
 
-public class str {
+// public class str {
 
-    public static void main(String[] args) {
-        String sentence = "my name is manthan";
-        String subString = sentence.substring(11, sentence.length());
-        System.out.println(subString);
-    }
-}
+// public static void main(String[] args) {
+// String sentence = "my name is manthan";
+// String subString = sentence.substring(11, sentence.length());
+// System.out.println(subString);
+// }
+// }
