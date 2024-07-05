@@ -1,11 +1,10 @@
-// ENCAPSULATION
-
-//DATA + FUNCTION == CLASS
 
 // ABSTRACTION  = Abstract INFORMATION BY ABSTRACT KEYWORD
 
 //rules 
-//1.it always Start with ABSTRACT keyword, 
+
+//1.it always Start with ABSTRACT keyword,
+
 //2.Can not be instansianted( OBJECTS) BASE CLASS >>> DERIVED CLASS
 
 //BASE CLASS:
@@ -28,7 +27,7 @@ class Chicken extends animal {
     }
 }
 
-public class Encapsulation_abstraion {
+public class abstraction {
     public static void main(String[] args) {
         Horse horse = new Horse();
         horse.walk(); // Walk on 4 legs
