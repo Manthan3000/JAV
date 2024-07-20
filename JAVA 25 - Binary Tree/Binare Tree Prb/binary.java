@@ -341,18 +341,18 @@ public class binary {
         return mInfo;
     }
 
-    public static int Diameter(Node root) {
-        if (root == null) {
-            return 0;
-        }
+    // public static int Diameter(Node root) {
+    // if (root == null) {
+    // return 0;
+    // }
 
-        int daim1 = Diameter(root.left);
-        int daim2 = Diameter(root.right);
-        int daim3 = height(root.left) + height(root.right) + 1;
+    // int daim1 = Diameter(root.left);
+    // int daim2 = Diameter(root.right);
+    // int daim3 = height(root.left) + height(root.right) + 1;
 
-        return Math.max(daim3, Math.max(daim1, daim2));
+    // return Math.max(daim3, Math.max(daim1, daim2));
 
-    }
+    // }
 
     public static void main(String[] args) {
         int node[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
