@@ -68,8 +68,10 @@ public class Queue {
         // 1 2 3
 
         while (!q.isEmpty()) {
+            System.out.println("Queue ");
             System.out.println(q.peek());
             q.remove();
+
         }
     }
 }
