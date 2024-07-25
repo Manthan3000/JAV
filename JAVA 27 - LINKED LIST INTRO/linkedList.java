@@ -1,5 +1,7 @@
 //  LINKED LIST IN JAVA
 
+import java.util.LinkedList;
+
 public class linkedList {
     Node head;
 
@@ -100,6 +102,40 @@ public class linkedList {
         return size;
     }
 
+    // REVERSE LINKEDLIST
+    // 1 RECURESSION :
+    public Node revRecc(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node newHead = revRecc(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
+    // 2 .
+    public void reverse() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node prevNode = head;
+        Node currNode = head.next;
+
+        while (currNode != null) {
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            // Update
+            prevNode = currNode;
+            currNode = prevNode;
+        }
+        head.next = null;
+        head = prevNode;
+    }
+
     public static void main(String[] args) {
         linkedList list = new linkedList();
         list.addLast("is");
@@ -121,5 +157,11 @@ public class linkedList {
 
         // Size Null is not Counteed
         System.out.println(list.getSize());
+
+        // REVERSE LIST :
+
+        // list.reversed(); // [..5,4,3,2,1]
+        // list.printList();//[1,2,3,4,5]
+
     }
 }
