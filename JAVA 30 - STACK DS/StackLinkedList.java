@@ -57,7 +57,7 @@ public class StackLinkedList {
         s.push(3);
         s.push(4);
         // OUTPUT [4,3,2,1]
-
+  
         while (!s.isEmp()) {
             System.out.println(s.peak());
             s.pop();

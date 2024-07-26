@@ -203,7 +203,7 @@ public class binary {
             return;
         }
 
-        Queue<Node> q = new LinkedList<>() {
+        LinkedList<Node> q = new LinkedList<>() {
 
         };
         q.add(root);
