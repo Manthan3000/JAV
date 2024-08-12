@@ -9,6 +9,7 @@ public class bst {
 
         Node(int data) {
             this.data = data;
+            
         }
     }
 
@@ -16,6 +17,7 @@ public class bst {
         if (root == null) {
             root = new Node(val);
             return root;
+
         }
 
         if (root.data > val) {
